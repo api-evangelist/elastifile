@@ -1,8 +1,27 @@
 aid: elastifile
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/elastifile.png
 name: Elastifile
-description: Elastifile is a company surfaced as a portfolio company of battery-ventures, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Elastifile was an enterprise cloud file-storage company founded in 2013 in Tel Aviv, Israel. It
+  built a software-defined, scale-out distributed file system (the Elastifile Cloud File System /
+  ECFS) that delivered elastic, high-performance NFS-compatible shared storage for enterprise-grade
+  applications running at scale in the public cloud, with the ability to scale capacity out or in on
+  demand. Backed by Battery Ventures and Lightspeed Venture Partners (among others), Elastifile was
+  acquired by Google Cloud in August 2019 (reported at roughly $200M) and its technology was folded
+  into Google Cloud Filestore, powering the Filestore High Scale / Enterprise tiers. Elastifile no
+  longer operates as an independent company or brand: elastifile.com redirects to Google Cloud
+  Filestore, and there is no standalone Elastifile developer portal, API, or SDK surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/elastifile/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,14 +30,34 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: google
+x-acquired-date: '2019-08'
+x-successor-product: https://cloud.google.com/filestore
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Storage
+- Cloud Storage
+- File Storage
+- Enterprise
+- Infrastructure
+- Acquired
+- Google Cloud
 apis: []
+common:
+- type: Website
+  url: https://cloud.google.com/filestore
+  name: Google Cloud Filestore (successor product)
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
